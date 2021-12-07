@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  .parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  div{
+    width: 150px;
+    height: 80px;
+    background-color: rgb(10, 151, 85);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .one{
+    align-self: flex-end;
+    width: 25px;
+  }
+  
+  .two{
+    width: 200px;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+  }
+  .three{
+    align-self: flex-end;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .four{
+    order: 3;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .five{
+    order: 3;
+    height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+  }
+  .six{
+    order: 1;
+    align-items: center;
+    align-content: flex-end;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+</style>
+<body>
+  <div class="parent">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+  </div>
+</body>
+</html>
