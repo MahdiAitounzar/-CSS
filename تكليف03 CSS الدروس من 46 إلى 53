@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  .parent{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+  div{
+    width: 150px;
+    height: 50px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one{
+    order: 6;
+    align-self: flex-end;
+    height: 40px;
+  }
+  .two{
+    order: 5;
+    align-self: flex-end;
+    height: 100px;
+  }
+  .three{
+    order: 3;
+    height: 40px;
+    display: flex;
+    align-self: start;
+  }
+  .four{
+    order: 3;
+    height: 100px;
+    align-self: start;
+    display: flex;
+
+  }
+  .five{
+    order: 3;
+    height: 140px;
+    align-self: flex-end;
+
+  }
+  .six{
+    order: 1;
+    align-self: flex-start;
+    align-content: flex-end;
+    height: 140px;
+  }
+
+</style>
+<body>
+  <div class="parent">
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+    <div class="four">4</div>
+    <div class="five">5</div>
+    <div class="six">6</div>
+  </div>
+</body>
+</html>
