@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  :root{
+    --mainColor: #eee;
+    --mainpadding: 10px;
+    --colorzayd : rgb(201, 195, 195);
+    --mainmargin: 50px auto;
+  }
+  .page{
+    background-color: var(--mainColor);
+    padding: var(--mainpadding);
+    margin: var(--mainmargin);
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header{
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo{
+    background-color: var(--colorzayd);
+    padding: var(--mainpadding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    
+  }
+  .header .links{
+    background-color: var(--colorzayd);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+    list-style: none;
+    margin-top: 0;
+    padding: var(--mainpadding);
+  }
+  .page .header ul li {
+    margin-left: 10px;
+  }
+  .main-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main-area .content{
+    background-color: var(--colorzayd);
+    padding: var(--mainpadding);
+    width: 66%;
+    height: 350px;
+  }
+  .main-area .sidebar{
+    background-color: var(--colorzayd);
+    padding: var(--mainpadding);
+    width: 32%;
+    height: 350px;
+
+  }
+  .footer{
+    background-color: var(--colorzayd);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: var(--mainpadding);
+    margin-top: 10px;
+  }
+</style>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="logo">Logo</div>
+      <ul class="links">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="main-area">
+      <div class="content">Content</div>
+      <div class="sidebar">Sidebar</div>
+    </div>
+    <div class="footer">
+      <div class="copyright">Copyright 2021</div>
+      <div class="design">Designed By Elzero</div>
+    </div>
+  </div>
+</body>
+</html>
