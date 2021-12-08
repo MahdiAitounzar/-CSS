@@ -47,8 +47,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 80%;
-    height: 40px;
+    width: 82%;
+    height: 38px;
     list-style: none;
     margin-top: 0;
     padding: var(--mainpadding);
